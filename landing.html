@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      line-height: 1.6;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 24px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: #ff9800;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://picsum.photos/1200/600') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 48px;
+    }
+    .hero p {
+      font-size: 20px;
+      margin: 15px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ff9800;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #e67e22;
+    }
+
+    /* Features Section */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 50px;
+      background: #f4f4f9;
+      text-align: center;
+    }
+    .feature {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* About Section */
+    .about {
+      padding: 50px;
+      text-align: center;
+    }
+    .about h2 {
+      margin-bottom: 20px;
+    }
+
+    /* Contact Section */
+    .contact {
+      background: #222;
+      color: #fff;
+      padding: 50px;
+      text-align: center;
+    }
+    .contact input, .contact textarea {
+      width: 80%;
+      max-width: 400px;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact button {
+      padding: 10px 20px;
+      background: #ff9800;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background: #e67e22;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 32px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MyLanding</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <div>
+      <h2>Welcome to My Landing Page</h2>
+      <p>Modern. Responsive. Simple.</p>
+      <a href="#features" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature">
+      <h3>🚀 Fast</h3>
+      <p>Optimized for performance and speed.</p>
+    </div>
+    <div class="feature">
+      <h3>📱 Responsive</h3>
+      <p>Looks great on all devices.</p>
+    </div>
+    <div class="feature">
+      <h3>🎨 Modern</h3>
+      <p>Clean and modern design with smooth UI.</p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>We build simple and elegant web solutions that help businesses grow and succeed online.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea rows="5" placeholder="Your Message"></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 MyLanding | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
