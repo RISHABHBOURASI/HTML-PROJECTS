@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .post {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .post img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .post h2 {
+      margin-top: 10px;
+    }
+    .post p {
+      line-height: 1.6;
+    }
+    .post a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #0077cc;
+    }
+    aside {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    aside h3 {
+      margin-top: 0;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Blog Posts -->
+    <main>
+      <div class="post">
+        <img src="https://via.placeholder.com/800x300" alt="Post Image">
+        <h2>My First Blog Post</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac feugiat libero, nec suscipit justo.</p>
+        <a href="#">Read More →</a>
+      </div>
+
+      <div class="post">
+        <img src="https://via.placeholder.com/800x300" alt="Post Image">
+        <h2>Learning Web Development</h2>
+        <p>Curabitur vel risus nec nulla volutpat tincidunt. Donec vitae felis eget turpis commodo ullamcorper.</p>
+        <a href="#">Read More →</a>
+      </div>
+
+      <div class="post">
+        <img src="https://via.placeholder.com/800x300" alt="Post Image">
+        <h2>Why Blogging is Fun</h2>
+        <p>Aliquam erat volutpat. Suspendisse potenti. Donec non elit id erat blandit tincidunt in sit amet justo.</p>
+        <a href="#">Read More →</a>
+      </div>
+    </main>
+
+    <!-- Sidebar -->
+    <aside>
+      <h3>About Me</h3>
+      <p>Hi, I'm Rishabh! I love writing about web development, design, and technology.</p>
+
+      <h3>Categories</h3>
+      <ul>
+        <li>Web Development</li>
+        <li>Programming</li>
+        <li>Design</li>
+        <li>Technology</li>
+      </ul>
+
+      <h3>Recent Posts</h3>
+      <ul>
+        <li>How to start coding</li>
+        <li>Top 5 HTML Projects</li>
+        <li>My learning journey</li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <p>© 2025 My Blog | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
